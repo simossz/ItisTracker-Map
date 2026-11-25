@@ -1,0 +1,54 @@
+{
+  "source": "ItisTracker",
+  "note": "Esempio con 6 aule reali, in ordine di codice. Il numero di banchi corrisponde agli studenti della classe.",
+  "rooms": [
+    {
+      "code": "A01",
+      "class": "2L",
+      "students": 20,
+      "floor": "Piano terra",
+      "sample": "Lunedì 08:00 · Lettere",
+      "accent": "#B5552F"
+    },
+    {
+      "code": "A02",
+      "class": "1L",
+      "students": 24,
+      "floor": "Piano terra",
+      "sample": "Lunedì 08:00 · Religione",
+      "accent": "#164573"
+    },
+    {
+      "code": "A05",
+      "class": "1B",
+      "students": 23,
+      "floor": "Piano terra",
+      "sample": "Lunedì 10:00 · Inglese",
+      "accent": "#8A6D2F"
+    },
+    {
+      "code": "A10",
+      "class": "1G",
+      "students": 30,
+      "floor": "Piano 1",
+      "sample": "Lunedì 09:00 · Inglese",
+      "accent": "#3F6B4A"
+    },
+    {
+      "code": "A23",
+      "class": "1D",
+      "students": 27,
+      "floor": "Piano terra",
+      "sample": "Lunedì 08:00 · Religione",
+      "accent": "#6B4E71"
+    },
+    {
+      "code": "A173",
+      "class": "1C",
+      "students": 26,
+      "floor": "Piano 1",
+      "sample": "Lunedì 10:00 · Inglese",
+      "accent": "#8F4A3C"
+    }
+  ]
+}

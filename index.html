@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mappa Aule · ItisTracker</title>
+  <meta name="description" content="Esempio di mappa 3D delle aule dell'ITIS Leonardo da Vinci di Parma. Ogni banco corrisponde a uno studente.">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <div>
+        <strong>Mappa Aule</strong>
+        <small>ItisTracker · ITIS Leonardo da Vinci, Parma</small>
+      </div>
+    </div>
+    <nav aria-label="Navigazione">
+      <a href="https://itis.simocode.xyz/" target="_blank" rel="noopener">Vai a ItisTracker ↗</a>
+      <button id="theme-toggle" type="button" aria-pressed="false">Tema scuro</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="kicker">Esempio · 6 aule</p>
+      <h1>Le aule, viste da sopra.</h1>
+      <p class="lead">Ogni banco è uno studente. Trascina per ruotare, scrolla per avvicinarti, clicca un'aula per i dettagli.</p>
+    </section>
+
+    <div class="workspace">
+      <div class="stage" id="stage">
+        <div class="loading" id="loading">Carico la mappa…</div>
+      </div>
+
+      <aside class="panel" aria-label="Dettagli aula">
+        <div class="panel-inner" id="detail" aria-live="polite">
+          <p class="hint">Seleziona un'aula nella mappa o dalla lista qui sotto.</p>
+        </div>
+        <div class="room-list-wrap">
+          <h2>Aule</h2>
+          <div class="room-list" id="room-list"></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <span>Demo con dati reali ma layout schematico: le aule sono raggruppate per codice, non in pianta 1:1.</span>
+    <span>Solo conteggi — nessun nominativo.</span>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
